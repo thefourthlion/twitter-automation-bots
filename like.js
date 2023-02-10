@@ -1,6 +1,6 @@
 const { twitterClient } = require("./twitterClient.js");
 const like = async () => {
-  const whereTakenTweets = await twitterClient.v2.search("#Worldle");
+  const whereTakenTweets = await twitterClient.v2.search("#EXAMPLE");
 
   console.log(whereTakenTweets);
   //   for await (const tweet of whereTakenTweets) {

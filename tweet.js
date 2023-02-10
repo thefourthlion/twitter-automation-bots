@@ -8,7 +8,7 @@ const tweet = async () => {
   }
 };
 
-const cronTweet = new CronJob("30 * * * * *", async () => {
+const TweetTimer = new CronJob("30 * * * * *", async () => {
   console.log("Started cronjob...✅");
   try {
     tweet();
@@ -18,4 +18,4 @@ const cronTweet = new CronJob("30 * * * * *", async () => {
   }
 });
 
-module.exports = { cronTweet };
+module.exports = { TweetTimer };
